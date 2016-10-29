@@ -22,21 +22,20 @@ public class Ch4Ex17
         totalTrips = input.nextInt();
         while (trip <= totalTrips) 
             {
-            System.out.println("Enter mileage for trip " + trip + ":");
-            miles = input.nextInt();
+            System.out.print("Enter mileage for trip " + trip + ": ");
+            miles = input.nextDouble();
             totalMiles += miles;
-            System.out.println("Enter gallons of gas used for trip " + trip + ":");
-            gallons = input.nextInt();
+            System.out.print("Enter gallons of gas used for trip " + trip + ": ");
+            gallons = input.nextDouble();
             totalGallons += gallons;
             mileage = miles / gallons;
             totalMileage = totalMiles / totalGallons;
-            System.out.print("Your mileage for this trip, (" + trip + ") was: ");
-            System.out.printf("%.2f miles per gallon.\n", mileage);
-            System.out.print("Your running total so far is: " + totalMiles + " miles, " + totalGallons + " gallons used, and ");
-            System.out.printf("%.2f miles per gallon.\n", totalMileage);
+            System.out.printf("Your mileage for this trip, (%d), was: %.2f miles per gallon.\n" , trip , mileage);
+            System.out.printf("Your running total is: %.2f miles, %.2f gallons used, and %.2f miles per gallon.\n" , totalMiles , totalGallons , totalMileage);
             trip++;
             }
-        
+        System.out.println();
+        System.out.println("Trip entry complete. Thank you!");
         }
     
     }
