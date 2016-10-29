@@ -1,21 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+// Fig. 4.7: GradeBookTest.java
+// Create GradeBook object and invoke its determineClassAverage method.
 package ch4fig6;
-
-/**
- *
- * @author colby
- */
-public class GradeBookTest {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
-}
+public class GradeBookTest
+    {
+    public static void main(String[] args) 
+        {
+        // creaate gradebook object myGradeBook and
+        // pass the coursename to the constructor
+        GradeBook myGradeBook = new GradeBook(
+            "CIS 101 Introduction To Java Programming");
+        
+        myGradeBook.displayMessage(); //displays welcome message
+        myGradeBook.determineClassAverage();//find the average of 10 grades
+        }// end main
+    }// end class gadeBookYest
